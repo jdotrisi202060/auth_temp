@@ -1,14 +1,17 @@
 <h1>New black</h1>
 
-<% form_for(@black) do |f| %>
+<% form_for @black, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
 
   <p>
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </p>
-   <%= f.label :tag_list %>
+  <%= f.label :tag_list %>
   <%= f.text_field :tag_list, :size => 80 %>
+  <p>
+    <%= f.file_field :boxofshit %>
+  </p>
   <p>
     <%= f.submit 'Create' %>
   </p>

@@ -3,11 +3,17 @@
 <table>
   <tr>
     <th>Description</th>
+    <th>File Name</th>
+    <th>Owner ID</th>
+    <th>Tags</th>
   </tr>
 
 <% @blacks.each do |black| %>
   <tr>
     <td><%=h black.description %></td>
+    <td><%=h black.boxofshit_file_name %></td>
+    <td><%=h black.user_id %></td>
+    <td><%=h black.tag_list %></td>
     <td><%= link_to 'Show', black %></td>
     <td><%= link_to 'Edit', edit_black_path(black) %></td>
     <td><%= link_to 'Destroy', black, :confirm => 'Are you sure?', :method => :delete %></td>
