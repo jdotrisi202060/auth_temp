@@ -9,13 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100228181435) do
+ActiveRecord::Schema.define(:version => 20100228201107) do
 
   create_table "blacks", :force => true do |t|
     t.string   "description"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "boxofshit_file_name"
+    t.string   "boxofshit_content_type"
+    t.integer  "boxofshit_file_size"
+    t.datetime "boxofshit_updated_at"
   end
 
   create_table "blogs", :force => true do |t|

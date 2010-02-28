@@ -41,7 +41,7 @@ class BlacksController < ApplicationController
   # POST /blacks.xml
   def create
     @black = Black.new(params[:black])
-    if current_user?
+    if current_user
       @black.user_id = current_user.id
     else
       @black.user_id = 0
