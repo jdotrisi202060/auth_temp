@@ -2,18 +2,18 @@
 
 <% form_for @black, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
-
+  <%= f.file_field :boxofshit %>
   <p>
     <%= f.label :description %><br />
     <%= f.text_field :description %>
   </p>
   <%= f.label :tag_list %>
   <%= f.text_field :tag_list, :size => 80 %>
+  
+    
+  
   <p>
-    <%= f.file_field :boxofshit %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
+    <%= f.submit 'Upload' %>
   </p>
 <% end %>
 

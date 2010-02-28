@@ -6,4 +6,6 @@ class Black < ActiveRecord::Base
   has_attached_file :boxofshit
 
   validates_attachment_presence :boxofshit
+
+  TagList.delimiter = " "
 end

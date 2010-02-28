@@ -1,7 +1,8 @@
 body {
-  background-color: #4B7399;
+  background-color: #000000 ;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
+  color: #FFFFFF;
 }
 
 a img {
@@ -9,7 +10,12 @@ a img {
 }
 
 a {
-  color: #0000FF;
+  color: #ffffff;
+}
+
+input {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .clear {
@@ -21,7 +27,7 @@ a {
 #container {
   width: 75%;
   margin: 0 auto;
-  background-color: #FFF;
+  background-color: #000000;
   padding: 20px 40px;
   border: solid 1px black;
   margin-top: 20px;
