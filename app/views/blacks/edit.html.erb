@@ -1,0 +1,19 @@
+<h1>Editing black</h1>
+
+<% form_for(@black) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+   <%= f.label :tag_list %>
+  <%= f.text_field :tag_list, :size => 80 %>
+  
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @black %> |
+<%= link_to 'Back', blacks_path %>
