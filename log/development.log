@@ -1670,3 +1670,130 @@ Rendering blacks/index
 Completed in 118ms (View: 107, DB: 5) | 200 OK [http://localhost/blacks]
   [4;36;1mTagging Load (1.5ms)[0m   [0;1mSELECT * FROM "taggings" [0m
   [4;35;1mTagging Load (0.3ms)[0m   [0mSELECT * FROM "taggings" ORDER BY taggings.id DESC LIMIT 1[0m
+
+
+Processing BlacksController#index (for 127.0.0.1 at 2010-02-28 17:42:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"blacks"}
+  [4;36;1mBlack Load (1.2ms)[0m   [0;1mSELECT * FROM "blacks" [0m
+Rendering template within layouts/application
+Rendering blacks/index
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 1) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 2) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 3) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 4) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 5) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 6) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 7) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 8) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 9) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 10) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 11) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 12) AND ("taggings".taggable_type = 'Black')) [0m
+Completed in 341ms (View: 328, DB: 5) | 200 OK [http://localhost/]
+
+
+Processing BlacksController#index (for 127.0.0.1 at 2010-02-28 18:43:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"blacks"}
+  [4;35;1mBlack Load (1.7ms)[0m   [0mSELECT * FROM "blacks" [0m
+Rendering template within layouts/application
+Rendering blacks/index
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 1) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (26.7ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 2) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 3) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 4) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 5) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 6) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 7) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 8) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 9) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (6.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 10) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.9ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 11) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.5ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 12) AND ("taggings".taggable_type = 'Black')) [0m
+Completed in 197ms (View: 147, DB: 38) | 200 OK [http://localhost/]
+
+
+Processing BlacksController#index (for 127.0.0.1 at 2010-02-28 19:09:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"blacks"}
+  [4;36;1mBlack Load (1.2ms)[0m   [0;1mSELECT * FROM "blacks" [0m
+Rendering template within layouts/application
+Rendering blacks/index
+  [4;35;1mTag Load (4.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 1) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 2) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 3) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 4) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 5) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 6) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 7) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 8) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 9) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 10) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 11) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 12) AND ("taggings".taggable_type = 'Black')) [0m
+Completed in 138ms (View: 124, DB: 8) | 200 OK [http://localhost/blacks]
+
+
+Processing BlacksController#new (for 127.0.0.1 at 2010-02-28 19:09:49) [GET]
+  Parameters: {"action"=>"new", "controller"=>"blacks"}
+Rendering template within layouts/application
+Rendering blacks/new
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://localhost/blacks/new]
+
+
+Processing BlacksController#index (for 127.0.0.1 at 2010-02-28 19:09:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"blacks"}
+  [4;35;1mBlack Load (1.2ms)[0m   [0mSELECT * FROM "blacks" [0m
+Rendering template within layouts/application
+Rendering blacks/index
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 1) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 2) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 3) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 4) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 5) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.2ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 6) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 7) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 8) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.3ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 9) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 10) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;36;1mTag Load (0.2ms)[0m   [0;1mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 11) AND ("taggings".taggable_type = 'Black')) [0m
+  [4;35;1mTag Load (0.3ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 12) AND ("taggings".taggable_type = 'Black')) [0m
+Completed in 125ms (View: 115, DB: 4) | 200 OK [http://localhost/blacks]
+
+
+Processing BlacksController#show (for 127.0.0.1 at 2010-02-28 19:09:53) [GET]
+  Parameters: {"action"=>"show", "id"=>"10", "controller"=>"blacks"}
+  [4;36;1mBlack Load (0.2ms)[0m   [0;1mSELECT * FROM "blacks" WHERE ("blacks"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering blacks/show
+Completed in 19ms (View: 11, DB: 0) | 200 OK [http://localhost/blacks/10]
+
+
+Processing BlacksController#show (for 127.0.0.1 at 2010-02-28 19:10:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"10", "controller"=>"blacks"}
+  [4;35;1mBlack Load (0.2ms)[0m   [0mSELECT * FROM "blacks" WHERE ("blacks"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering blacks/show
+
+ActionView::TemplateError (undefined local variable or method `black' for #<ActionView::Base:0x103316e98>) on line #5 of app/views/blacks/show.html.erb:
+2:   <b>Description:</b>
+3:   <%=h @black.description %>
+4:   <br />
+5:   <%=h black.boxofshit_file_name %>
+6:   <br />
+7:   <%=h black.tag_list %>
+8: </p>
+
+    app/views/blacks/show.html.erb:5
+    app/controllers/blacks_controller.rb:18:in `show'
+
+Rendered rescues/_trace (101.9ms)
+Rendered rescues/_request_and_response (5.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BlacksController#show (for 127.0.0.1 at 2010-02-28 19:11:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"10", "controller"=>"blacks"}
+  [4;36;1mBlack Load (0.2ms)[0m   [0;1mSELECT * FROM "blacks" WHERE ("blacks"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering blacks/show
+  [4;35;1mTag Load (0.4ms)[0m   [0mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags".id = "taggings".tag_id WHERE (("taggings".taggable_id = 10) AND ("taggings".taggable_type = 'Black')) [0m
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/blacks/10]
